@@ -1,0 +1,20 @@
+{
+  "name": "push-ced-source-to-ephemeral-action",
+  "version": "1.0.0",
+  "description": "Github Action to push source files to ephemeral environment in CloudEdgeDistribution.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && ncc build ./js/index.js --minify --no-cache"
+  },
+  "author": "Merthin Technologies",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@ced/cli-dev": "^1.1.109"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.12",
+    "@vercel/ncc": "^0.25.1",
+    "typescript": "^4.1.2"
+  }
+}
