@@ -5,10 +5,10 @@ inputs:
     description: "CloudEdgeDistribution CLI token. If not specified it'll try to resolve the CLI token from environment variable CED_CLI_TOKEN."
     required: false
   source-environment:
-    description: 'Environment to use as reference for ephemeral environment. If not specified it'll try to resolve it from environment variable CED_SOURCE_ENVIRONMENT.'
+    description: "Environment to use as reference for ephemeral environment. If not specified it'll try to resolve it from environment variable CED_SOURCE_ENVIRONMENT."
     required: false
   ephemeral-environment:
-    description: 'Ephemeral environment. If not specified it'll try to resolve it from environment variable CED_EPHEMERAL_ENVIRONMENT.'
+    description: "Ephemeral environment. If not specified it'll try to resolve it from environment variable CED_EPHEMERAL_ENVIRONMENT."
     required: false
   path:
     description: "Path to the CloudEdgeDistribution project. If not specified it'll try to resolve it from environment variable CED_PROJECT_PATH, it'll use current folder otherwise."
