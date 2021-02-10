@@ -40,7 +40,6 @@ const run = async () => {
   });
 
   const environments = await commands.listEnvironments().run();
-  console.log(`Existing environments: ${environments.join(', ')}`);
 
   if (!environments.some((x) => x.name === ephemeralEnvironment)) {
     await commands
@@ -48,7 +47,7 @@ const run = async () => {
       .run(sourceEnvironment, ephemeralEnvironment, undefined, true);
   }
 
-  await commands.pushSource().run();
+  await commands.pushSource().run(ephemeralEnvironment);
 };
 
 run();
